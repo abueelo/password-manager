@@ -1,0 +1,123 @@
+@font-face {
+    font-family: consolas;
+    src: url(CONSOLA.TTF);
+}
+
+*{
+    font-family: 'consolas';
+}
+
+.shiftdown{
+    transform: translateY(20%);
+}
+
+.right{
+    /*align-items:end;*/
+    transform: translateY(20%);
+}
+
+.left{
+    transform: translateY(20%) translateX(-160%);
+}
+
+body {
+    background-color: #efefef;
+    min-width: 300px; /* your desired width */
+    max-width: 100%;
+    min-height: 300px;
+    max-height: 300px;
+    position: relative;
+    border-radius: 10px;
+    margin: auto;
+    /*vertical-align:middle;*/
+}
+
+div.title{
+    background-color: #ef946c;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    vertical-align: middle;
+}
+
+input[type="text"],input[type="text"]:focus{
+    background: transparent;
+    border: none;
+    outline-width: 0;
+    color: white;
+    justify-content: center;
+    width: 80%;
+    margin-left: -10%;
+    margin-right: -10%;
+    text-align: left;
+}
+
+input[type="text"]::placeholder { 
+    color: white;
+    opacity: 1;
+    text-align: left;
+}
+
+div.database{
+    background-color: #f6f6f6;
+    width: 100%;
+    height: 255px;
+    padding-top: 15%;
+    overflow:scroll;
+}
+
+div.generate{
+    background-color: #6e6e6e;
+    /*vertical-align: center;*/
+    width: 100%;
+    height: 30px;
+    min-height: 15%;
+    max-height: 15%;
+}
+
+
+.title {
+    align-items: center;
+    /*font-size: 15px;*/
+    font-family: "consolas";
+    color: #fff;
+}
+
+button{
+    margin-left: 10px;
+    margin-right: 0px;
+}
+
+#result{
+    margin: 0px;
+    margin-left: 100px;
+    color: white;
+    transform: translateY(-11.5px);
+}
+
+.gone{
+    background: transparent;
+    border: none;
+}
+
+#clipboard{
+    transform: translateY(2px) translateX(10px);
+    padding: 0px;
+    margin: 0px;
+}
+
+.center-vertical{
+    transform: translateY(50%);
+}
+
+.entry{
+    background-color: #e0e0e0;
+}
+
+.database{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Test Extension Options</title>
+  </head>
+  <body>
+    <script src="bundle.js"></script>
+    <script src="bundle2.js"></script>
+    <h2>Login:</h2>
+    <input placeholder="username" id="username" type="text">
+    <input placeholder="password" id="password" type="text">
+
+    <div id="status"></div>
+    <button id="save">Login</button>
+    <button id="clear">Logout</button>
+    <button id="create_account">Create Account</button>
+    <br>
+    <div id="new entry">
+        <h2>New Entry:</h2>
+        <input placeholder="entry name" id="name" type="text">
+        <input placeholder="username" id="username_new" type="text">
+        <input placeholder="password" id="password_new" type="text">
+        <input placeholder="example.com" id="website url" type="text">
+        <input placeholder="any notes?" id="notes" type="text">
+        <button id="add_entry">add entry</button>
+    </div>
+    <br>
+    <div id="remove entry">
+        <h2>Remove Entry:</h2>
+        <input placeholder="id" id="id" type="text">
+        <button id="remove_entry">remove</button>
+    </div>
+    <p id="result"></p>
+    <script src="options.js"></script>
+    <script src="add_entry.js"></script>
+    <script src="request.js"></script>
+  </body>
+</html>

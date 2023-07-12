@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Old Persons Password Manager",
+  "description": "password manager",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "icon.png"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  }
+}
