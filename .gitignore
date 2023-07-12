@@ -1,6 +1,10 @@
 # Keys
 *.pem
 
+# Databse
+data.base
+*.base
+
 # Logs
 logs
 *.log
