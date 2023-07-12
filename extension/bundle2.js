@@ -4,21 +4,7 @@ const crypto = require("crypto");
 const CryptoJS = require("crypto-js");
 
 const server_pub = `
------BEGIN PUBLIC KEY-----
-MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA2Pv0pdd33RgO/Xu0gnE8
-QpRLpzUCTq6U1AdOhdRWQLKq4tL7mCpdL2pJxVArGydxmMocADa1BgxezRD2Q7QK
-l1ZJzbPusYIIeCpUjB6HZjSmtqEQdBkvVlDHg5/uzKc99DSSZshmnKrjoNHMwEh5
-B9hrhZN5r+WEhON7em0pqiJsw84WUHKWkY8R09VOK2YI4cm5prArrICi0ehygDTV
-/ldqd7o2UECEjVxjF5uoQK8lth5qcOww5OygRWKlyrw6SRA6p+L52lydtcX78rb6
-EsgjH0WWfTWdfDQF+kXgefdEgQL9yg8TteJxmT3Qfy3DHOmLVGsyxl8zQCmFI0Ti
-QQao69/wF314KrOUbeE3T9aMGd/vSHQmwhqkw9BcT5etrXzDZtOdqiboP4CwAbVA
-9JizC2nCUdE9oM1OGIzHEfxDSFaK+7zJHf54ie+5Nw12CxvF69eFWo41pMFKEMNy
-NkkTv2pFrXzvvv95kDEBd2tSVHW8NfAAtPpq2hR0ldl+YwvhO4/58uugfkCjq4g9
-YJB2o6KPPNlBpiROSZ5SbRZtkGswt+3hF+bo9EkIotlap6PtRPvvFPodsrPNQgMn
-8ghNfauB7wAkKi8ll4qI1JPrIRN93dgymEXKYAmAMqBeyKw2TldhFrd54K7n7X7e
-SmQJw11rhKR6fl0W/0+Y12MCAwEAAQ==
------END PUBLIC KEY-----
-`
+` // include a public key here
 
 module.exports = {
     server_pub: server_pub,
