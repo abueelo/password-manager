@@ -1,0 +1,59 @@
+--database example:
+[
+    [], --> every email being used by users for checking against
+    {
+        "salt": ...
+        "email": ...
+        "master_password": ... [hashed with salt]
+        "UUID": ...
+        "data": [
+            {
+                "username": ...
+                "password": ...
+                "website-url": ...
+                "name": ...
+                "note": ...
+                "ID": short-uuid, [added after by the server]
+            },
+            {
+                ... [more of above]
+            }
+        ] --> [encrypted with key that is gettable by both ends (some combination of UUID and master_password)]
+    },
+    {
+        ... [more of above]
+    },
+    ...
+]
+
+
+
+/create_account
+{
+    "email": "example@example.com",
+    "password": [hashed password]
+}
+
+/request_data
+{
+    "request_type":"GET", //plain text
+    "data":"---", //encrypted
+    "UUID":"---" //plain text
+}
+
+/add_entry
+{
+    "request_type":"GET", //plain text
+    "data":{
+        "email":"---",
+        "password":"---",
+        "entry":{
+            "username": ...
+            "password": ...
+            "website_url": ...
+            "name": ...
+            "note": ...
+        }, --> [encrypted with key that is gettable by both ends (some combination of UUID and master_password)]
+    }, //encrypted
+    "UUID":"---" //plain text
+}
